@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Reservasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="card" id="formReservasi">
+        <h2>Formulir Reservasi</h2>
+
+        <label>Nama Lengkap *</label>
+        <input type="text" required placeholder="Masukkan nama lengkap">
+
+        <div class="row">
+            <div>
+                <label>Email *</label>
+                <input type="email" required placeholder="nama@contoh.com">
+            </div>
+            <div>
+                <label>Nomor HP *</label>
+                <input type="tel" required placeholder="08xxxxxxxxxx">
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label>Tanggal Reservasi *</label>
+                <input type="date" required>
+            </div>
+            <div>
+                <label>Jam Reservasi *</label>
+                <select required>
+                    <option value="">Pilih Jam</option>
+                    <option>08:00</option>
+                    <option>10:00</option>
+                    <option>13:00</option>
+                    <option>16:00</option>
+                    <option>19:00</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label>Jenis Program *</label>
+                <select required>
+                    <option value="">Pilih Program</option>
+                    <option>Yoga</option>
+                    <option>HIIT</option>
+                    <option>Personal Training</option>
+                </select>
+            </div>
+            <div>
+                <label>Pilih Cabang *</label>
+                <select required>
+                    <option value="">Pilih Cabang</option>
+                    <option>Jakarta</option>
+                    <option>Bandung</option>
+                </select>
+            </div>
+        </div>
+
+        <label>Catatan Khusus</label>
+        <textarea placeholder="Kebutuhan khusus, riwayat kesehatan, atau pertanyaan lainnya..."></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" required>
+            <span>Saya menyetujui syarat dan ketentuan yang berlaku</span>
+        </div>
+
+        <button type="submit">KIRIM RESERVASI</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

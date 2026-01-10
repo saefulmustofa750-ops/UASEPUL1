@@ -1,0 +1,158 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 720px;
+}
+
+/* CARD */
+.card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* TITLE */
+.card h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #1d2671;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* INPUT, SELECT, TEXTAREA */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #c33764;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(195, 55, 100, 0.15);
+}
+
+/* TEXTAREA */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+.row > div {
+    flex: 1;
+}
+
+/* CHECKBOX */
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: #555;
+}
+
+.checkbox input {
+    width: auto;
+    margin-top: 3px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(195, 55, 100, 0.4);
+}
+
+/* BUTTON ACTIVE */
+button:active {
+    transform: scale(0.98);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
